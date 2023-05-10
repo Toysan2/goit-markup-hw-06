@@ -277,6 +277,9 @@ svg {
     position: absolute;
     top: 11px;
     left: 55px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-input-comment {
@@ -348,6 +351,9 @@ svg {
     background-color: var(--white-font);
     border: solid 2px var(--dark-font);
     border-radius: 2px;
+    transition-property: background-color, border;
+    transition-duration: 2s;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container input:checked ~ .checkmark {
     background-color: var(--only-blue);
@@ -358,7 +364,7 @@ svg {
     position: absolute;
     display: none;
 }
-.container .checkmark:after {
+.checkbox-container .checkmark:after {
     left: 4px;
     top: -1px;
     width: 5px;
