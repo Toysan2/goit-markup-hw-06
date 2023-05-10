@@ -295,6 +295,7 @@ svg {
     outline: none;
     border-radius: 4px;
     margin-bottom: 20px;
+    resize: none;
 }
 .contact-form-input-comment::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
