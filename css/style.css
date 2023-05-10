@@ -293,20 +293,22 @@ svg {
     border-radius: 4px;
     margin-bottom: 20px;
 }
-::placeholder {
+.contact-form-input-comment::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: red;
-    opacity: 1; /* Firefox */
+    color: var(--grey-font);
+    opacity: 0.5; /* Firefox */
 }
 
-:-ms-input-placeholder {
+.contact-form-input-comment:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: red;
+    color: var(--grey-font);
+    opacity: 0.5;
 }
 
-::-ms-input-placeholder {
+.contact-form-input-comment::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: red;
+    color: var(--grey-font);
+    opacity: 0.5;
 }
 
 .contact-form-input:is(:hover, :focus) + .contact-form-icon {
@@ -612,7 +614,6 @@ ul#team li {
     border-radius: 4px;
     color: var(--white-font);
     padding-left: 16px;
-    opacity: 0.5;
 }
 .newsletter-button {
     display: inline-flex;
@@ -635,6 +636,23 @@ ul#team li {
     color: var(--white-font);
     border: solid 1px var(--only-blue);
     border-radius: 4px;
+}
+.newsletter-input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--white-font);
+    opacity: 0.6; /* Firefox */
+}
+
+.newsletter-input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--white-font);
+    opacity: 0.6;
+}
+
+.newsletter-input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--white-font);
+    opacity: 0.6;
 }
 /* main - filters - portfolio.html */
 .button {
