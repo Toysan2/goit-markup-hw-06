@@ -310,15 +310,73 @@ svg {
     color: var(--grey-font);
     opacity: 0.5;
 }
-
+.contact-form-input-comment:is(:hover, :focus) {
+    border: solid 1px var(--only-blue);
+}
 .contact-form-input:is(:hover, :focus) + .contact-form-icon {
     fill: var(--only-blue);
 }
 .contact-form-input:is(:hover, :focus) {
     border: solid 1px var(--only-blue);
 }
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 54px;
+    height: 15px;
+    width: 16px;
+    background-color: var(--white-font);
+    border: solid 2px var(--dark-font);
+    border-radius: 2px;
+}
+.container input:checked ~ .checkmark {
+    background-color: var(--only-blue);
+    border-color: var(--only-blue);
+}
+.checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+.container .checkmark:after {
+    left: 4px;
+    top: -1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
 .policy-font {
+    position: absolute;
     font-size: Roboto;
+    top: 1px;
+    left: 77px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 3%;
